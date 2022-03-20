@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+
+message MovieRequest {
+    // Send a Request to Server
+    string movie_list = 1;
+}
+
+
+
+message MovieList {
+    // Get Movie data includes: rank, title, imDbRating, imDbRatingCount
+    string rank = 1;
+    string title = 2;
+    string imDbRating = 3;
+    string imDbRatingCount = 4;
+}
+
+
+message MovieResponse {
+    // Get a List of MovieList Message; field_name == movies
+    repeated MovieList movies = 1;
+}
+
+service Movies{
+    // Run method get_movies with MovieRequest parameter and return MovieResponse
+    rpc get_movies(MovieRequest) returns (MovieResponse);
+}

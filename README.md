@@ -19,12 +19,13 @@ after cloning project:
 you should register in [imdb](https://imdb-api.com/) and take an API-KEY
 or use Top250Movies.json
 create an virtual environment,
-activate it and done.
+activate it, install dependencies and done.
 
 ```
 $ cd gRPC_service
 $ python3 -m virtualenv .venv
 $ source bin/activate/.venv
+$ python -m pip install -r requirements.txt
 ```
 
 ## Running Program

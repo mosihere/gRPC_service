@@ -17,7 +17,7 @@ $ git clone https://github.com/mosihere/gRPC_service
 ## Usage
 after cloning project:
 you should register in [imdb](https://imdb-api.com/) and take an API-KEY
-
+or use Top250Movies.json
 create an virtual environment,
 activate it and done.
 

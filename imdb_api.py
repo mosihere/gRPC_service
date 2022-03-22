@@ -22,19 +22,15 @@ def get_movie_info():
         del item['image']
         del item['crew']
 
+    dict_data = {}
+    dict_data['items'] = data
+    
     with open('Top250Movies.json', 'w') as f:
-        json.dump(data, f)
+        json.dump(dict_data, f)
+
+    return response.status_code
 
 
-
-    with open('Top250Movies.json') as F:
-        deserialized_data = json.load(F)
-
-    return deserialized_data
-
-
-
-get_movie_info()
 
 
 if __name__ == "__main__":

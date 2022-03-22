@@ -3,6 +3,7 @@ from movie_service_pb2 import MovieRequest
 from movie_service_pb2_grpc import MoviesStub
 
 
+
 class FetchMovies:
     def __init__(self) -> None:
         self.channel = grpc.insecure_channel('localhost:50051')
@@ -14,13 +15,6 @@ class FetchMovies:
         return response
 
 
-
-
-# channel = grpc.insecure_channel('localhost:50051')
-# client = MoviesStub(channel)
-# request = MovieRequest(movie_list='items')
-  
-# print(client.get_movies(request))
 
 
 if __name__ == "__main__":

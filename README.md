@@ -3,7 +3,8 @@
 using gRPC in Python 
 
 ## Application
-__Whenever client send a request, server will process it and send JSON object as response back to the client__
+__Whenever client send a request, server will process it and send JSON object as response back to the client__<br  />
+
 **Response is --> Top 250 Movies of IMDB**
 
 ## Clone Project
